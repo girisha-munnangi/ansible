@@ -6,5 +6,12 @@
     ansible.builtin.package:
       name: nginx
       state: present
+  
+  - name: nginx service
+    ansiblel.builtin.service:
+    name: nginx
+    state: started
+    enabled: yes 
+
 
 
