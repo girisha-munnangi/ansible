@@ -14,4 +14,4 @@
      #here it will print course : ansible taken from tasks variable as a priority and trainer is mentioned in 2 places inside course.yaml and play level variables here priority is from course.yaml
 
      #variables priority
-     #
+     #1.
