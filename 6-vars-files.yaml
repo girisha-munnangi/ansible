@@ -1,4 +1,4 @@
-- name: "variables in files"
+- name: variables in files
   hosts: local
   connection: local
   vars_files:
@@ -7,5 +7,5 @@
   - name: "variables inside file"
     vars:
      COURSE: Ansible
-  ansible.builtin.debug:
+    ansible.builtin.debug:
      msg: "course is {{ COURSE }}, Trainer is {{ TRAINER }}"
