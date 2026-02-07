@@ -1,0 +1,11 @@
+- name: variables in files
+  hosts: local
+  connection: local
+  vars_files:
+  - giri.yaml
+  tasks:
+  - name: variables inside file
+    vars:
+     COURSE: Ansible
+  ansible.builtin.debug:
+     msg: "course is {{ COURSE }}, Trainer is {{ TRAINER }}"
