@@ -1,10 +1,10 @@
-- name: variables in files
+- name: "variables in files"
   hosts: local
   connection: local
   vars_files:
   - giri.yaml
   tasks:
-  - name: variables inside file
+  - name: "variables inside file"
     vars:
      COURSE: Ansible
   ansible.builtin.debug:
