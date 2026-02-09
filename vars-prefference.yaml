@@ -10,10 +10,10 @@
   - name: printing vars from prompt
     prompt: print the vars from prompt
     private: false
-  tasks:
-  - name : printing the vars from task level variables
-    vars:
-     NAME: vars from task level
+  # tasks:
+  # - name : printing the vars from task level variables
+  #   vars:
+  #    NAME: vars from task level
     ansible.builtin.debug:
      msg: " print the vars {{ NAME }}"
     
