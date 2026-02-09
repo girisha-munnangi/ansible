@@ -1,0 +1,24 @@
+- name: printing date types 
+  hosts: local
+  connection: local
+  vars:
+   PROGRAM: "Devops with AWS" #string
+   DURATION: 140  #init
+   IS_LIVE: true   #boolean
+   DETAILS:   #map or dictionary key: value
+    MONTHS: 4
+    TRAINER: "siva kumar reddy"
+   TOPICS:  #lists starts with - or []
+   - linux
+   - shell
+   - ansible
+  tasks:
+  - name: print data types
+    ansible.builtin.debug:
+      msg: |
+        program: {{ PROGRAM }}
+        duration: {{ DURATION }}
+        is live : {{ IS_LIVE }}
+        details: {{ DETAILS }}
+        topics: {{ TOPICS }}
+
