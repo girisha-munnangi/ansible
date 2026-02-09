@@ -4,7 +4,7 @@
   vars:
   - name : printing playlevel vars
     NAME: vars from play level variables
-  var_files:
+  vars_files:
   - vars.yaml
   var_prompt:
   - name: printing vars from prompt
