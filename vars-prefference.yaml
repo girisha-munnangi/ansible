@@ -6,7 +6,7 @@
     NAME: vars from play level variables
   vars_files:
   - vars.yaml
-  var_prompt:
+  vars_prompt:
   - name: printing vars from prompt
     prompt: print the vars from prompt
     private: false
