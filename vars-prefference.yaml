@@ -7,7 +7,7 @@
   vars_files:
   - vars.yaml
   vars_prompt:
-  - name: printing vars from prompt
+  - name: prompt
     prompt: print the vars from prompt
     private: false
   # tasks:
