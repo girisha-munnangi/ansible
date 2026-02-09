@@ -15,10 +15,10 @@
   tasks:
   - name: print data types
     ansible.builtin.debug:
-      msg: |
-        program: {{ PROGRAM }}
+      msg: 
+        "program: {{ PROGRAM }}
         duration: {{ DURATION }}
         is live : {{ IS_LIVE }}
         details: {{ DETAILS }}
-        topics: {{ TOPICS }}
+        topics: {{ TOPICS }}"
 
