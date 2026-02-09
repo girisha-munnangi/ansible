@@ -2,7 +2,6 @@
   hosts: local
   connection: local
   vars:
-  - name: printing playlevel vars
     NAME: "vars from play level variables"
   vars_files:
   - vars.yaml
