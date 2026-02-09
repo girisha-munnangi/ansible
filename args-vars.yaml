@@ -1,0 +1,7 @@
+- name: printing args variables
+  hosts: local
+  connection: local
+  tasks:
+  - name : printing variables from args
+    ansible.builtin.debug:
+     msg: "printing girish's {{ LOCATION }}"
