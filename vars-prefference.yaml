@@ -3,7 +3,7 @@
   connection: local
   vars:
   - name: description
-  - NAME: "vars from play level variables"
+    NAME: "vars from play level variables"
   # vars_files:
   # - vars.yaml
   # vars_prompt:
@@ -15,5 +15,5 @@
   #   vars:
   #    NAME: vars from task level
     ansible.builtin.debug:
-     msg: " print the vars {{ NAME }} , {{ name }}"
+     msg: " print the vars {{ NAME }} , {{ - name }}"
     
