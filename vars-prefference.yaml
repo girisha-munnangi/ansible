@@ -15,5 +15,5 @@
   #   vars:
   #    NAME: vars from task level
     ansible.builtin.debug:
-     msg: " print the vars {{ NAME }} , {{ - name }}"
+     msg: " print the vars {{ NAME }} , {{ name }}"
     
