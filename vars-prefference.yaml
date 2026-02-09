@@ -1,18 +1,18 @@
 - name: printing vars prefference
   hosts: local
   connection: local
-  # vars:
-  #   NAME: "vars from play level variables"
-  # vars_files:
-  # - vars.yaml
-  # vars_prompt:
-  # - name: NAME
-  #   prompt: print the vars from prompt
-  #   private: false
+  vars:
+    NAME: "vars from play level variables"
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+  - name: NAME
+    prompt: print the vars from prompt
+    private: false
   tasks:
   - name : printing the vars from task level variables
-    # vars:
-    #  NAME: vars from task level
+    vars:
+     NAME: vars from task level
     ansible.builtin.debug:
      msg: " print the vars {{ NAME }} "
     
