@@ -6,12 +6,12 @@
     ansible.builtin.debug:
       msg: "{{ ansible_facts }}"
 
-  # - name: check redhat or not
-  #   ansible.builtin.debug:
-  #     msg: "yes package is redhat"
-  #   when: ansible_facts.os.family == "redhat"
+  - name: check redhat or not
+    ansible.builtin.debug:
+      msg: "yes package is redhat"
+    when: ansible_facts.os.family == "redhat"
 
-  # - name: check debian or not 
-  #   ansible.builtin.debug:
-  #     msg: "yes package manager is debian"
-  #   when: ansible_facts.os.family == "debian"
+  - name: check debian or not 
+    ansible.builtin.debug:
+      msg: "yes package manager is debian"
+    when: ansible_facts.os.family == "debian"
