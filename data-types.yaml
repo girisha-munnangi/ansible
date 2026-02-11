@@ -16,7 +16,7 @@
   - name: print data types
     ansible.builtin.debug:
       msg: 
-        "program: {{ PROGRAM }}
+         "program: {{ PROGRAM }}
         duration: {{ DURATION }}
         is live : {{ IS_LIVE }}
         details: {{ DETAILS }}
