@@ -1,0 +1,16 @@
+- name: upper,lower,ipv4 filters checking
+  hosts: local
+  connection: local
+  vars:
+    course: "Devops with ansible"
+    myip: 171.47.78.98
+  tasks:
+  - name: convert to upper case
+    ansible.builtin.debug:
+      msg: "{{ course | upper }}"
+  - name: convert to lower case
+    ansible.builtin.debug:
+      msg: "{{ course | lower }}"
+  - name: check my ipv4
+    ansible.builtin.debug:
+      msg: "{{ myip | ansible.utils.ipv4 }}"
