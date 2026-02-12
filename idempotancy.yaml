@@ -9,4 +9,4 @@
 
   - name: printing user 
     ansible.builtin.debug:
-      msg: " {{ name }} "
+      msg: " {{ '(id girisha)'' }} "
