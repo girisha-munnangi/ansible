@@ -3,7 +3,7 @@
   connection: local
   vars:
     course: "Devops with ansible"
-    myip: 171.47.78.98
+    myip: 171.47.78.981
   tasks:
   - name: convert to upper case
     ansible.builtin.debug:
