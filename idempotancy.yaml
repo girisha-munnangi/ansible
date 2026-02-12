@@ -1,6 +1,7 @@
 - name: creating user with user module
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: user creating
     ansible.builtin.user:
