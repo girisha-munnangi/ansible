@@ -3,7 +3,7 @@
   connection: local
   vars:
     topics: "linux, shell, ansible, terraform"
-    greeting: "good morning"
+    #greeting: "good morning"
     tagsmap:
       name: ansible
       project: roboshop
