@@ -3,6 +3,7 @@
   connection: local
   vars:
     topics: "linux, shell, ansible, terraform"
+    greeting: "good morning"
     tagsmap:
       name: ansible
       project: roboshop
@@ -10,4 +11,4 @@
   tasks:
   - name: greeting default variable
     ansible.builtin.debug:
-      msg: "Hi siva kumar,{{ greeting | default ('Good morning')}}"
+      msg: "Hi siva kumar,{{ greeting }}"
